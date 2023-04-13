@@ -1,5 +1,5 @@
 Package: luigg
-Title: Mario Themed Plotting Extensions
+Title: Mario Themed 'ggplot2' Extensions
 Version: 0.0.0.9000
 Authors@R: 
     person("Christopher T.", "Kenny", email = "christopherkenny@fas.harvard.edu",
