@@ -11,7 +11,8 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
     cli,
-    ggplot2
+    ggplot2,
+    rlang
 Suggests: 
     farver
 URL: https://github.com/christopherkenny/luigg
