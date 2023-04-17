@@ -1,9 +1,9 @@
 Package: luigg
-Title: What the Package Does (One Line, Title Case)
+Title: Mario Themed 'ggplot2' Extensions
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Christopher T.", "Kenny", email = "christopherkenny@fas.harvard.edu",
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9386-6860"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
