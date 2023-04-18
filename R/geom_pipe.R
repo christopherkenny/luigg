@@ -1,27 +1,36 @@
-# https://github.com/tidyverse/ggplot2/blob/2e649bbc8ee2778a73043b4ffd4cf90f84bf0acf/R/geom-bar.R#L109
 # warp pipe: https://www.mariowiki.com/Warp_Pipe
+#' Title
+#'
+#' @inheritParams ggplot2::geom_polygon
+#'
+#' @return a `ggplot`
+#' @export
+#'
+#' @examples
+#' set.seed(1)
+#' data.frame(x = as.character(1:4), n = 100 * runif(n = 4, 0, .5)) |>
+#'  ggplot2::ggplot(aes(x = x, y = n, fill = x)) +
+#'   geom_pipe() +
+#'   scale_fill_luigg(palette = 'warp_pipe') +
+#'   ggplot2::theme_void()
 geom_pipe <- function(mapping = NULL, data = NULL,
-                      stat = "identity", position = "identity",
+                      stat = 'identity', position = 'identity',
+                      rule = 'evenodd',
                       ...,
-                      just = 0.5,
-                      width = NULL,
                       na.rm = FALSE,
-                      orientation = NA,
                       show.legend = NA,
                       inherit.aes = TRUE) {
-  ggplot2::layer(
+  layer(
     data = data,
     mapping = mapping,
-    stat = stat,
-    geom = GeomPipe,
+    stat = StatPipe,
+    geom = ggplot2::GeomPolygon,
     position = position,
     show.legend = show.legend,
     inherit.aes = inherit.aes,
     params = rlang::list2(
-      just = just,
-      width = width,
       na.rm = na.rm,
-      orientation = orientation,
+      rule = rule,
       ...
     )
   )
@@ -31,7 +40,15 @@ geom_pipe <- function(mapping = NULL, data = NULL,
 #' @format NULL
 #' @usage NULL
 #' @export
-GeomPipe <- ggplot2::ggproto('GeomPipe', Geom,
-                             required_aes = c('x', 'y'),
-
+StatPipe <- ggplot2::ggproto('StatPipe', ggplot2::Stat,
+  required_aes = c('x', 'y'),
+  compute_group = function(data, scales, width = 1) {
+    pipe_shape <- data.frame(
+      x = c(.1, .1, 0, 0, 1, 1, .9, .9),
+      y = c(0, .8, .8, 1, 1, .8, .8, 0)
+    )
+    x_out <- (data$x - width / 2) + (width * pipe_shape$x)
+    y_out <- data$y * pipe_shape$y
+    data.frame(x = x_out, y = y_out)
+  }
 )

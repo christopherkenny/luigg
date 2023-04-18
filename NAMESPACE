@@ -2,5 +2,10 @@
 
 S3method(plot,palette)
 S3method(print,palette)
+export(StatPipe)
+export(geom_pipe)
 export(luigg)
+export(scale_color_luigg)
+export(scale_colour_luigg)
+export(scale_fill_luigg)
 importFrom(ggplot2,.data)

@@ -3,7 +3,7 @@
 \docType{data}
 \name{luigg}
 \alias{luigg}
-\title{Crayons Color Palettes}
+\title{Mario Brothers Color Palettes}
 \format{
 list of character vectors of type \code{c('palette', 'character')}
 }
@@ -11,13 +11,13 @@ list of character vectors of type \code{c('palette', 'character')}
 luigg
 }
 \description{
-Crayon colors, based on common Crayola colors.
-Palettes build from \href{https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors}{Wikipedia}
+Color palettes from various Mario/Nintendo games
 }
 \details{
 Included palettes:
 \itemize{
-\item \strong{super_mario}, Super Mario Bros. Palette
+\item \strong{super_mario}, Super Mario Bros. palette (from Politis et al 2017)
+\item \strong{double_dash}, Mario Kart Double Dash palette
 }
 }
 \examples{

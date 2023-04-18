@@ -34,5 +34,11 @@ luigg <- list(
       toadette = '#F77AD1', wario = '#FFFE0D'
     ),
     class = c('palette', 'character')
+  ),
+  warp_pipe = structure(
+    c(
+      green = '#3DA247', blue = '#1A3AA8', yellow = '#FFCA3E', red = '#E7393E'
+    ),
+    class = c('palette', 'character')
   )
 )
