@@ -17,5 +17,6 @@ Imports:
     rlang
 Suggests: 
     farver
-URL: https://github.com/christopherkenny/luigg
+URL: https://github.com/christopherkenny/luigg,
+    http://christophertkenny.com/luigg/
 BugReports: https://github.com/christopherkenny/luigg/issues
