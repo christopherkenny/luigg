@@ -1,4 +1,4 @@
-# stolen from my crayons pkg: https://github.com/christopherkenny/crayons/blob/main/R/utils.R
+# stolen from my `crayons` pkg: https://github.com/christopherkenny/crayons/blob/main/R/utils.R
 # last updated 2023-04-11
 rot_pal <- function(pal) {
   pal <- unname(pal)

@@ -4,7 +4,9 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Christopher T.", "Kenny", email = "christopherkenny@fas.harvard.edu",
                   role = c("aut", "cre"), comment = c(ORCID = "0000-0002-9386-6860"))
-Description: What the package does (one paragraph).
+Description: Provides Mario and Luigi themed 'ggplot2' extensions. This includes
+    color palettes based on major characters and games. This also provides a warp pipe
+    bar graph style.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

@@ -82,7 +82,7 @@ Title
 \examples{
 set.seed(1)
 data.frame(x = as.character(1:4), n = 100 * runif(n = 4, 0, .5)) |>
- ggplot2::ggplot(aes(x = x, y = n, fill = x)) +
+ ggplot2::ggplot(ggplot2::aes(x = x, y = n, fill = x)) +
   geom_pipe() +
   scale_fill_luigg(palette = 'warp_pipe') +
   ggplot2::theme_void()
