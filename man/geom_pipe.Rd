@@ -4,7 +4,7 @@
 \name{geom_pipe}
 \alias{geom_pipe}
 \alias{StatPipe}
-\title{Title}
+\title{Warp Pipe Bar Graph}
 \usage{
 geom_pipe(
   mapping = NULL,
@@ -77,7 +77,7 @@ the default plot specification, e.g. \code{\link[ggplot2:borders]{borders()}}.}
 a \code{ggplot}
 }
 \description{
-Title
+Warp Pipe Bar Graph
 }
 \examples{
 set.seed(1)

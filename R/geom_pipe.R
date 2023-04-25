@@ -1,5 +1,5 @@
 # warp pipe: https://www.mariowiki.com/Warp_Pipe
-#' Title
+#' Warp Pipe Bar Graph
 #'
 #' @inheritParams ggplot2::geom_polygon
 #'
