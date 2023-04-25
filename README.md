@@ -4,6 +4,8 @@
 # luigg <img src="man/figures/logo.png" align="right" height="138" />
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/christopherkenny/luigg/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/christopherkenny/luigg/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `luigg` is to provide some silly, Mario-themed `ggplot` extensions.
